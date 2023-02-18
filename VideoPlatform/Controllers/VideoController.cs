@@ -142,7 +142,7 @@ public class VideoController : ControllerBase
         var existingVideo = _dbConnection.Videos.FirstOrDefault(v => v.Id == id);
 
         if (existingVideo is null)
-            return NotFound("Video does not exist");
+            return NotFound("Video does not exist!");
 
         _dbConnection.Videos.Remove(existingVideo);
         _dbConnection.SaveChanges();

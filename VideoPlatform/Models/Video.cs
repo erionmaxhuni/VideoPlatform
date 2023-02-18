@@ -33,7 +33,7 @@ public class VideoPut
     public int? CategoryId { get; set; }
 }
 
-
+//Setting Validation rules
 public class VideoValidator : AbstractValidator<VideoPost>
 {
     public VideoValidator()
