@@ -172,6 +172,7 @@ public class CommentController : ControllerBase
         _dbConnection.SaveChanges();
 
         return NoContent();
+        
     }
 }
 
