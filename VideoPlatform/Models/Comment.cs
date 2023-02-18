@@ -37,4 +37,5 @@ public class CommentValidator : AbstractValidator<CommentPost>
 public class CommentPut
 {
     public string Content { get; set; }
+    
 }
