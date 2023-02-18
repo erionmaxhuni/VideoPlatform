@@ -10,6 +10,7 @@ using VideoPlatform.Services;
 using DbConnection = VideoPlatform.Data.DbConnection;
 
 namespace VideoPlatform.Controllers;
+
 [ApiController]
 [Route("api/reactions/likes")]
 public class LikeController : ControllerBase
