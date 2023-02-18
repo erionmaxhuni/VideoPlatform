@@ -53,7 +53,7 @@ public class AuthenticationController : ControllerBase
     public ActionResult Signup([FromBody] UserPost user)
     {
         if (user is null)
-            return BadRequest("Invalid Input");
+             return BadRequest("Invalid Input");
 
 
         var validationResult = _userValidator.Validate(user);

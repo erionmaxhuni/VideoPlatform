@@ -27,6 +27,7 @@ public class UserPost
     public string Password { get; set; }
 }
 
+//Roles as Enums
 public enum Role
 {
     admin,
