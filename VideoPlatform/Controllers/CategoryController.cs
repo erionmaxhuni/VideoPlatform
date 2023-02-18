@@ -51,7 +51,7 @@ public class CategoryController : ControllerBase
         var existingCategory = _dbConnection.Categories.FirstOrDefault(c => c.Name.ToLower() == category.Name.ToLower());
 
         if (existingCategory != null)
-            return Conflict("Category already Exists");
+            return Conflict("Category already exists");
 
         var newCategory = new Category()
         {
